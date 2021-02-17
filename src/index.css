@@ -131,3 +131,6 @@ body {
   border-bottom: 4px solid orangered !important;
   color: black !important;
 }
+.heroCont {
+  max-width: 500px;
+}

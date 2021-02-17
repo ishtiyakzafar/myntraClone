@@ -61,7 +61,7 @@ class Hero extends Component {
             return (
               <Row>
                 <Col
-                  className="d-flex flex-column justify-content-center align-items-center"
+                  className="d-flex flex-column justify-content-center Container align-items-center"
                   style={{
                     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${data.src})`,
                     width: "100%",
@@ -72,7 +72,9 @@ class Hero extends Component {
                   }}
                 >
                   <h1 className="text-white">{data.title}</h1>
-                  <p className="text-white w-50 text-center">{data.content}</p>
+                  <p className="text-white heroCont text-center">
+                    {data.content}
+                  </p>
                   <button className="shop_btn ">Shop Now</button>
                 </Col>
               </Row>
