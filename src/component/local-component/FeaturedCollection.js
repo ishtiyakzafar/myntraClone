@@ -1,0 +1,51 @@
+import React from "react";
+
+import img1 from "../../assets/images/img1.jpg";
+
+import img4 from "../../assets/images/img4.jpg";
+import img5 from "../../assets/images/img5.jpg";
+import img6 from "../../assets/images/img6.jpg";
+import img7 from "../../assets/images/img7.jpg";
+import img8 from "../../assets/images/img8.jpg";
+
+import { Row, Col } from "antd";
+
+const FeaturedCollection = () => {
+  const featuredData = [
+    { id: 0, title: "Emao Collection 2020", imgsrc: img1 },
+    { id: 1, title: "Molita Collection 2020", imgsrc: img5 },
+    { id: 2, title: "Esika Collection 2020", imgsrc: img7 },
+    { id: 3, title: "Malini Collection 2020", imgsrc: img4 },
+    { id: 4, title: "Mahima Collection 2020", imgsrc: img5 },
+    { id: 5, title: "Rani Collection 2020", imgsrc: img6 },
+    { id: 6, title: "Promita Collection 2020", imgsrc: img7 },
+    { id: 7, title: "Esha Collection 2020", imgsrc: img8 },
+  ];
+  return (
+    <div>
+      <h3 className="text-center py-5">Featured Collection</h3>
+      <Row gutter={[16, 16]} className="Container mx-auto pb-5">
+        {featuredData.map((data, ind) => (
+          <Col xs={24} sm={12} md={8} lg={6} xl={6} key={data.id}>
+            <div
+              className="style__featured"
+              style={{
+                backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${data.imgsrc})`,
+                width: "100%",
+                height: "250px",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                cursor: "pointer",
+              }}
+            >
+              <p className="featured_content">{data.title}</p>
+            </div>
+          </Col>
+        ))}
+      </Row>
+    </div>
+  );
+};
+
+export default FeaturedCollection;
