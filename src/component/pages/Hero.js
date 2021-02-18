@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Row, Col, Carousel } from "antd";
 import { ArrowRightOutlined, ArrowLeftOutlined } from "@ant-design/icons";
-import hero from "../../assets/images/hero.jpg";
+import banner from "../../assets/images/banner.JPG";
 
 class Hero extends Component {
   constructor(props) {
@@ -20,34 +20,34 @@ class Hero extends Component {
       slidesToShow: 1,
       slidesToScroll: 1,
     };
-    const heroData = [
+    const bannerData = [
       {
         id: 0,
         title: "Women Dresses 40% off",
         content:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntlabore et dolore magna aliqua. Ut enim ad minim veniam",
-        src: hero,
+        src: banner,
       },
       {
         id: 0,
         title: "Women Dresses 40% off",
         content:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntlabore et dolore magna aliqua. Ut enim ad minim veniam",
-        src: hero,
+        src: banner,
       },
       {
         id: 0,
         title: "Women Dresses 40% off",
         content:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntlabore et dolore magna aliqua. Ut enim ad minim veniam",
-        src: hero,
+        src: banner,
       },
       {
         id: 0,
         title: "Women Dresses 40% off",
         content:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididuntlabore et dolore magna aliqua. Ut enim ad minim veniam",
-        src: hero,
+        src: banner,
       },
     ];
     return (
@@ -57,7 +57,7 @@ class Hero extends Component {
         </div>
 
         <Carousel {...settings} ref={this.carouselRef} className="carausal">
-          {heroData.map((data) => {
+          {bannerData.map((data) => {
             return (
               <Row>
                 <Col
@@ -65,7 +65,7 @@ class Hero extends Component {
                   style={{
                     backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${data.src})`,
                     width: "100%",
-                    height: "60vh",
+                    height: "70vh",
                     backgroundRepeat: "no-repeat",
                     backgroundSize: "cover",
                     backgroundPosition: "center",

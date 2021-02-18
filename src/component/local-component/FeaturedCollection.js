@@ -1,20 +1,21 @@
 import React from "react";
 
-import img1 from "../../assets/images/img1.jpg";
-
-import img4 from "../../assets/images/img4.jpg";
-import img5 from "../../assets/images/img5.jpg";
-import img6 from "../../assets/images/img6.jpg";
-import img7 from "../../assets/images/img7.jpg";
-import img8 from "../../assets/images/img8.jpg";
+import img1 from "../../assets/images/feat-img1.JPG";
+import img2 from "../../assets/images/feat-img2.JPG";
+import img3 from "../../assets/images/feat-img3.JPG";
+import img4 from "../../assets/images/feat-img4.JPG";
+import img5 from "../../assets/images/feat-img5.JPG";
+import img6 from "../../assets/images/feat-img6.JPG";
+import img7 from "../../assets/images/feat-img7.JPG";
+import img8 from "../../assets/images/feat-img8.JPG";
 
 import { Row, Col } from "antd";
 
 const FeaturedCollection = () => {
   const featuredData = [
     { id: 0, title: "Emao Collection 2020", imgsrc: img1 },
-    { id: 1, title: "Molita Collection 2020", imgsrc: img5 },
-    { id: 2, title: "Esika Collection 2020", imgsrc: img7 },
+    { id: 1, title: "Molita Collection 2020", imgsrc: img2 },
+    { id: 2, title: "Esika Collection 2020", imgsrc: img3 },
     { id: 3, title: "Malini Collection 2020", imgsrc: img4 },
     { id: 4, title: "Mahima Collection 2020", imgsrc: img5 },
     { id: 5, title: "Rani Collection 2020", imgsrc: img6 },
@@ -32,7 +33,7 @@ const FeaturedCollection = () => {
               style={{
                 backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(${data.imgsrc})`,
                 width: "100%",
-                height: "250px",
+                height: "300px",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundPosition: "center",
